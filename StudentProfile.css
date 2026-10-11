@@ -1,0 +1,182 @@
+body {
+    margin: 0;
+    background: linear-gradient(to left, #ffcfd2, #50000d);
+    font-family: Garamond, serif;
+}
+/* UTECH, ja Heading */
+h1 {
+    background: linear-gradient(to right, #ffcfd2, #50000d);
+    color: #ffffff;
+    text-shadow: 1px 1px 2px black, 0 0 25px #3d1308, 0 0 5px white;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+/* SCIT Heading */
+h4 {
+    background: linear-gradient(to right, #ffcfd2, #50000d);
+    color: #ffffff;
+    text-shadow: 1px 1px 2px black, 0 0 25px #3d1308, 0 0 5px white;
+    text-align: center;
+    padding: 8px;
+    margin: 0;
+}
+/* Welcome Heading */
+h2 {
+    background: linear-gradient(to right, #ffcfd2, #50000d);
+    color: #ffffff;
+    text-shadow: 1px 1px 2px black, 0 0 25px #3d1308, 0 0 5px white;
+    text-align: center;
+    padding: 12px;
+    margin: 0;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #3d1308;
+    padding: 8px;
+}
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    margin: 5px;
+}
+nav li {
+    display: inline;
+    margin: 10px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 20px;
+}
+nav a:hover {
+    background-color: #ffcfd2;
+}
+
+
+/* Sections */
+.profile {
+    background-color: white;
+    width: 75%;
+    margin: 20px auto;
+    padding: 18px;
+    border-radius: 10px;
+}
+
+
+/* Section headings */
+h3 {
+    color: #3d1308;
+    border-bottom: 2px solid #3d1308;
+    padding-bottom: 5px;
+    font-size: 20px;
+}
+
+/* About Section */
+#about {
+    position: relative;
+    min-height: 260px;
+}
+#about p {
+    width: 60%;
+}
+#about span {
+    font-weight: bold;
+    text-shadow: 0 0 3px #50000d;
+}
+#about img {
+    width: 240px;
+    height: auto;
+    border: 4px solid #ffcfd2;
+    border-radius: 15px;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+/* Courses Section */
+#courses li {
+    margin: 8px;
+}
+/*Course TimeTable */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th {
+    background-color: #3d1308;
+    color: white;
+    padding: 8px;
+}
+td {
+    padding: 8px;
+    border: 1px solid #999;
+}
+
+
+/* Contact Form Section */
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 10px;
+    box-sizing: border-box;
+}
+textarea {
+    height: 90px;
+}
+input[type="submit"] {
+    background-color: #3d1308;
+    color: white;
+    border-radius: 20px;
+    padding: 9px 18px;
+    width: auto;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #ffcfd2;
+}
+
+
+/*Footer*/
+footer {
+    background-color: #3d1308;
+    color: white;
+    text-align: center;
+    padding: 12px;
+}
+
+
+/*Mobile View*/
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 24px;
+    }
+    h2 {
+        font-size: 19px;
+    }
+    nav li {
+        display: block;
+        margin: 8px;
+    }
+    .profile {
+        width: 85%;
+    }
+    #about p {
+        width: 100%;
+    }
+    #about img {
+        position: static;
+        display: block;
+        margin: 15px auto;
+    }
+    table {
+        font-size: 12px;
+    }
+}
